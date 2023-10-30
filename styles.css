@@ -1,0 +1,57 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pdd: 1.5rem;
+    --background-color: white;
+    --primary-text: black;
+    --secondary-text: #282828;
+    --divider: rgb(211, 211, 211);
+}
+
+.navbar {
+    display: inline-flex;
+    justify-content: center;
+    vertical-align: center;
+    width: 100%;
+}
+
+.navbar > ul {
+    display: inline-flex;
+    list-style: none;
+    border-bottom: 1px solid var(--divider);
+    margin: 0;
+    padding: var(--pdd);
+}
+
+.navbar > ul > li {
+    margin-inline: var(--pdd);
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.1s;
+}
+
+.navbar > ul > li:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar > .logo {
+    position: absolute;
+    left: var(--pdd);
+}
+
+.navbar > .profile {
+    position: absolute;
+    border-radius: 100%;
+    right: var(--pdd);
+}
