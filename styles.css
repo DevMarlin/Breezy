@@ -21,7 +21,7 @@ body {
 .navbar {
     display: inline-flex;
     justify-content: center;
-    vertical-align: center;
+    align-items: center;
     width: 100%;
 }
 
